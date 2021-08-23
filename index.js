@@ -1,12 +1,15 @@
 const express = require('express');
+const morgan = require('morgan');
 const app = express();
 
-app.get('/teste', (req, res) => {
+app.use(morgan('dev'));
+
+app.get('/', (req, res) => {
     //rega de negócio
-    console.log('Achou a minha rota! (Teste456)');
-    res.json({ mensagem: 'Rota Funcionando! (Teste 456)' });
+    console.log('Achou a minha rota! (123)');
+    res.json({ mensagem: 'Rota Funcionando! (Teste 123)' });
 })
 
 app.listen(3000, () => {
-    console.log('Meu servidor está funcionando! (Teste 456)');
+    console.log('Meu servidor está funcionando! (Teste 123)');
 })

@@ -9,3 +9,4 @@ yarn add v1.22.5
 Aula 2
 yarn global add nodemon
 yarn start
+yarn add morgan
