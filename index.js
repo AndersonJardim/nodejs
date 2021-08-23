@@ -1,9 +1,10 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/teste', (req, res) => {
     //rega de negócio
-    res.json({ mensagem: 'Rota funcionando!' });
+    console.log('Achou a minha rota!');
+    res.json({ mensagem: 'Rota Funcionando!' });
 })
 
 app.listen(3000, () => {
