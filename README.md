@@ -6,7 +6,7 @@ yarn -v
 yarn add express
 yarn add v1.22.5
 
-Aula 2
+Aula 2 - API REST, Padrão CRUD e Rotas c/ Express no NodeJS
 yarn global add nodemon
 yarn start
 yarn add morgan
